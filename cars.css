@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #1F363D;
+    display: flex;
+    margin-top:auto;
+}
+
+.logo h2{
+    font-family: 'Changa One', cursive;
+    color: #CFE0C3;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.spc{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #FCD3DE;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #CCC9E7;
+    font-size: 20px;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 700px;
+}
+
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height:19px;
+    background: transparent;
+    border: 1px solid #D6FF79;
+    margin-top: 13px;
+    color: white;
+    border-right:none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #EEC6CA;
+    border: 2px solid #EEC6CA;
+    margin-top: 13px;
+    color: #361d2e;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.btn:focus{
+    outline: none;
+}
+
+.srch{
+    outline: none;
+}
+
+.btn:hover{
+    background-color: #D8FFDD;
+    color: maroon;
+    border: 2px solid #D8FFDD;
+}
+
+.box h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #623B5A;
+}
+
+.box h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    font-family: bold;
+    font-size: 30px;
+    color: #5E4C5A;
+}
+
+table{
+    width: 50%;
+    margin-bottom: 200px;
+}
+
+table, th, td {
+    border:1px solid black;
+    margin-left: 200px;
+    margin-top: 40px;
+  }
+
+th,td{
+    height: 70px;
+}
+ 
+th{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #754F44;
+}
+
+td{
+    padding-left: 80px;
+    font-family: arial;
+    font-weight: strong;
+    font-size: 19px;
+}
+

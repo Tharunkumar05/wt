@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carwala.com</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h2>Carwala</h2>
+        </div>
+        <nav class="spc">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="cars.html">CARS</a></li>
+                <!-- <li><a href="sevice.html">SERVICE</a></li> -->
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input class="srch" type="text" name="" placeholder="Search here">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+    </div>
+    <h1>Book A Car</h1>
+    <div class="choice">
+        <h3>Rent A Car By Fill This Form.</h3>
+        <form id="form" onsubmit="myFunction1()">
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br>
+            <label for="tel">Phone:</label>
+            <input type="tel" id="tel"><br>
+            <label for="mySelect">Select Brand:</label>
+            <select id="mySelect" onchange="myFunction()">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Tata">Tata</option>
+                <option value="Mahendra">Mahendra</option>
+            </select><br>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = "You selected: " + x;
+            }
+        </script>
+        <script>
+            const form = document.getElementById("form");
+
+            form.addEventListener("focus",(event) => {
+                event.target.style.background = "pink";
+            },
+            true
+            );
+
+            form.addEventListener("blur",(event) => {
+                event.target.style.background = "";
+            },
+            true
+            );
+
+            function myFunction1() {
+                window.alert("The form was submitted");
+            }
+
+
+        </script>
+    
+        <p id="demo"></p>
+
+    </div>
+    <h1 class="id">Here Are Some Used Cars For Sale</h1>
+    <div class="flex">
+        <div class="sec">
+            <img onmouseout="normalImg(this)" onmouseover="bigImg(this)" border="0" src="https://imgs.search.brave.com/gxPgxVt-2CO7c9qw-VWLxc6ZR3kDT-eG8KBTAAXnx5o/rs:fit:674:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5L/dWhfbWFpdnBNVExK/MURwSndhTURRSGFG/TiZwaWQ9QXBp">
+            <p><span>Owner:</span>RadhaKrishnan</p><br>
+            <p><span>Phone:</span>6546546541</p><br>
+            <p><span>Price:</span>24,00,000</p><br>
+            <p><span>State:</span>Tamil Nadu</p>
+        </div>
+        <div class="sec">
+            <img onmouseout="normalImg(this)" onmouseover="bigImg(this)" border="0" src="https://imgs.search.brave.com/yiViku8zwjgGgNytl9rzGK7i5LzSYmZBY6z7Oe4O2cA/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5M/T1hiWTZYX1dtZGQ3/c3l2Uk1GZ3l3SGFF/byZwaWQ9QXBp">
+            <p><span>Owner:</span>Suhas</p><br>
+            <p><span>Phone:</span>7567657651</p><br>
+            <p><span>Price:</span>5,00,000</p><br>
+            <p><span>State:</span>Maharastra</p>
+        </div>
+        <div class="sec">
+            <img onmouseout="normalImg(this)" onmouseover="bigImg(this)" border="0" src="https://imgs.search.brave.com/OiJnsK54MkQEEChi2z4j5qnopGFiMIqpz3L1U9x424Q/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC56/NDI0dklWR1VsVzJx/WDZ3eUJWY05BSGFF/NiZwaWQ9QXBp">
+            <p><span>Owner:</span>Vishal</p><br>
+            <p><span>Phone:</span>878787843</p><br>
+            <p><span>Price:</span>12,00,000</p><br>
+            <p><span>State:</span>Kerala</p>
+        </div>
+        <script>
+            function bigImg(x) {
+                x.style.height = "300px";
+                x.style.width = "400px";
+            }
+
+            function normalImg(x) {
+                x.style.height = "200px";
+                x.style.width = "300px";
+            }
+        </script>
+    </div>
+</body>
+</html>
