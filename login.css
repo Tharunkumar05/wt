@@ -3,153 +3,164 @@
     padding: 0;
 }
 
-.navbar-dark .navbar-nav {
-    margin-left: 1000px;
+header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* flex: 1; */
+    /* border: 1px solid red; */
+    background-color: #2A2B2A;
+    height: 50px;
 }
 
-ul li{
-    margin-left: 50px;
+.logo{
+    margin-top: 10px;
+    font-family: 'Rubik Pixels', cursive;
+    font-size: 20px;
+    color: #EFD6AC;
+    margin-left: 10px;
 }
 
-.nav-link{
-    color: #99D5C9;
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    max-width: 1500px;
+    margin-top: 17px;
 }
 
-.nav-link:hover{
-    font-weight: bold;
-    color: #63D471;
+nav a{
+    margin-right: 20px;
+    margin-left: 10px;
+    text-decoration: none; 
+    font-family: 'Libre Baskerville', serif;
+    color: #F8F4E3;
 }
 
-.d-flex{
-    margin-left: 650px;
+nav a:hover{
+    font-size: 20px;
+
 }
 
-.btn:hover{
-    background-color: #56203D;
-    border: 1px solid #56203D;
+nav ul{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    flex: 1;
+    max-width: 400px;
 }
 
-.main{
-    background: url("Audi.jpg");
-    height: 1000px; 
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.login{
+    display: flex;
+}
+
+.login .container{
+    width: 1400px;
+    height: 600px;
+    border: 1px solid red;
+    margin-left: 120px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.container .pic{
+    background: url("./public/back1.jpg");
+    width: 850px;
+    height: 600px;
     background-size: cover;
 }
 
-.container h1{
-    color:#A4303f;
-    height: auto;
-    margin: auto;
-    padding-top: 70px;
-    position: relative;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.container span{
-    color: #FF8427;
-}
-
-.container button{
-    background-color: #FF8427;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 10px;
+.pic h2{
+    text-align: center;
     margin-top: 30px;
-    font-weight: bold;
-    font-family: Arial;
-    border-color: #FF8427;
+    color: white;
+    font-size: 45px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pic p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-}
-
-.container .des:hover{
-    background: mediumseagreen;
-    border-color: mediumseagreen;
-}
-.form{
-    width: 300px;
-    height: 380px;
-    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: 100px;
-    left: 1200px;
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 500px;
-}
-
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
     text-align: center;
-    color: white;
-    font-size: 22px;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
+    margin-top: 10px;
 }
 
-.form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #ff7201;
+.det h2{
+    color: #0077b6;  
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;    
+    font-weight:700;    
+    margin-left: 200px;
+    margin-top: 20px;    
+}
+
+.det p{
+    color: #778da9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    margin-top: 80px;
+    /* text-align: center     */
+    margin-left: 170px;
+
+}
+
+.det form{
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+.det input{
+    color: #6c757d;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    width: 350px;
+    margin-bottom: 20px;
     border-top: none;
-    border-right: none;
     border-left: none;
-    color: #fff; 
+    border-right: none;
+    border-bottom: 1px solid #adb5bd;
+    padding-left: 10px;
     font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
+    font-weight:bold;
 }
 
-.form input:focus{
-    outline: none;
-}
-
-::placeholder{
-    color: white;
-    font-family: Arial;
-
-}
-
-.btnn{
-    width: 240px;
-    height: 40;
-    background: #ff7200;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor:pointer;
-    color: white;
-    transition: 0.4 ease;
-}
-
-.btnn:hover{
-    background: white;
-    color: #EDFFD9;
-}
-
-.btnn a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.form .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
+.det button{
+    border-radius: 12px;
+    width :100px;
+    height: 40px;   
+    margin-top: 20px;
     text-align: center;
-    color: aqua;
+    background-color: #05668d;
+    border: 2px solid #05668d;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 }
 
-.form .link a{
-    text-decoration: none;
-    color: #ff7200;
+.det button:hover{
+    background-color: white;
+    color: #05668d;
 }
 
+.det .hov{
+    background-color: white;
+    color: #05668d;
+    margin-left: 160px;
+}
+
+.det .hov:hover{
+    background-color: #05668d;
+    border: 2px solid #05668d;
+    color: white;
+}
